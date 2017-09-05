@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+<parameter name="appURL" value="https://uptake.com/"/>
+<parameter name="browserType" value="chrome"/>
+  <test name="sample test">
+    <classes>
+      <class name="com.uptake.tests.HomePageTests"/>
+      <class name="com.uptake.tests.AboutPageTests"/>
+      <class name="com.uptake.tests.BlogPageTests"/>
+      <class name="com.uptake.tests.NewsRoomPageTests"/>
+    </classes>
+  </test>
+</suite>
