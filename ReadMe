@@ -1,0 +1,19 @@
+To run the test:
+
+Go to your project directory from terminal and hit following commands
+
+mvn test (defualt will run on local firefox browser)
+mvn test "-Dbrowser=chrome" (to use any other browser)
+mvn test "-Dcloud_config=saucelab_windows_chrome52" (to run test on cloud test platforms)
+
+
+
+Before the running the test there are some setup should be made:
+
+Download eclipse and import the project
+Install Java and set path.
+Install Maven and set path.
+Download the drivers for various Browsers and set path (chromeDriver, geckodriver)
+If you want to run tests in Suace labs in different browsers create a properties file in the cloudBrowserConfigs and fill in the details
+For finding the number of emails the method is in the stepDefinitions>UserStepDefintion
+All the features will be in the features folder in the Test>Resource
